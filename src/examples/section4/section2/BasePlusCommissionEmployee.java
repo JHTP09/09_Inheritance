@@ -77,7 +77,7 @@ public class BasePlusCommissionEmployee
             "Commision rate must be > 0.0 and < 1.0" );
     }
     
-    public double getCommssionRate()
+    public double getCommissionRate()
     {
         return commissionRate;
     }
@@ -97,17 +97,17 @@ public class BasePlusCommissionEmployee
     
     public double earnings()
     {
-        return getBaseSalary() + ( getCommssionRate() * getGrossSales() );
+        return baseSalary + ( commissionRate * grossSales );
     }
     
     @Override
     public String toString()
     {
         return String.format( "%s: %s %s\n%s: %s\n%s: %.2f\n%s: %.2f\n%s: %.2f", 
-                "base-salaried commission employee", getFirstName(), getLastName(),
-                "social security number", getSocialSecurityNumber(),
-                "gross sales", getGrossSales(),
-                "commission rate", getCommssionRate(),
-                "base salary", getBaseSalary() );
+                "base-salaried commission employee", firstName, lastName,
+                "social security number", socialSecurityNumber,
+                "gross sales", grossSales,
+                "commission rate", commissionRate,
+                "base salary", baseSalary );
     }
 }

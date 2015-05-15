@@ -22,7 +22,7 @@ public class BasePlusCommissionEmployeeTest
         System.out.printf( "%s %.2f\n",
                 "Gross sales is", employee.getGrossSales() );
         System.out.printf( "%s %.2f\n",
-                "Commssion rate is", employee.getCommssionRate() );
+                "Commssion rate is", employee.getCommissionRate() );
         System.out.printf( "%s %.2f\n",
                 "Base salary is", employee.getBaseSalary() );
         

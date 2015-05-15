@@ -75,23 +75,23 @@ public class CommissionEmployee
             "Commision rate must be > 0.0 and < 1.0" );
     }
     
-    public double getCommssionRate()
+    public double getCommissionRate()
     {
         return commissionRate;
     }
     
     public double earnings()
     {
-        return getCommssionRate() * getGrossSales();
+        return commissionRate * grossSales;
     }
     
     @Override
     public String toString()
     {
         return String.format( "%s: %s %s\n%s: %s\n%s: %.2f\n%s: %.2f", 
-                "commission employee", getFirstName(), getLastName(),
-                "social security number", getSocialSecurityNumber(),
-                "gross sales", getGrossSales(),
-                "commission rate", getCommssionRate() );
+                "commission employee", firstName, lastName,
+                "social security number", socialSecurityNumber,
+                "gross sales", grossSales,
+                "commission rate", commissionRate );
     }
 }

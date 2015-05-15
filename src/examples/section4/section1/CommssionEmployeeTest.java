@@ -22,7 +22,7 @@ public class CommssionEmployeeTest
         System.out.printf( "%s %.2f\n",
                 "Gross sales is", employee.getGrossSales() );
         System.out.printf( "%s %.2f\n",
-                "Commssion rate is", employee.getCommssionRate() );
+                "Commssion rate is", employee.getCommissionRate() );
         
         employee.setGrossSales( 500 );
         employee.setCommissionRate( .1 );

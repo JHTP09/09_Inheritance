@@ -1,4 +1,4 @@
-package examples.section4.section2;
+package examples.section4.section4;
 
 /**
  *
